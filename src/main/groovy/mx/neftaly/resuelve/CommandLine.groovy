@@ -1,7 +1,7 @@
 package mx.neftaly.resuelve
 
-class Main {
+class CommandLine {
     static void main(String[] args) {
-        println "hello"
+        println "Hello"
     }
 }
