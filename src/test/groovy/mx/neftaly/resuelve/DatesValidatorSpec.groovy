@@ -15,6 +15,7 @@ class DatesValidatorSpec extends Specification {
         where:
             dateStart          | dateFinish         || expectedResult | reason
             "1994-12-03"       | "1994-12-03"       || true           | "Valid Dates"
+            "1994-12-00"       | "1994-12-00"       || true           | "lenient option and Invalid Dates"
             null               | null               || false          | "Null Dates"
             "XXXX-XX-XX"       | "XXXX-XX-XX"       || false          | "Invalid Dates"
             "LOLVERYBADSTRING" | "LOLVERYBADSTRING" || false          | "Bad Strings"
